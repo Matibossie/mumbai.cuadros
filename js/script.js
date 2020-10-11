@@ -2,7 +2,7 @@
 var input_blanter = document.getElementById('wa_textarea');
 
 /* Whatsapp Settings */
-var walink = 'https://web.whatsapp.com/send',
+var walink = 'https://api.whatsapp.com/send',
     phone = '+5491165212783',
     walink2 = 'Hola Mumbai! Mi nombre es ',
     text_yes = 'Conectando con Whatsapp.',
