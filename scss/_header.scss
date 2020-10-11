@@ -1,0 +1,56 @@
+@import "colors";
+@import "fonts";
+
+
+/** HEADER **/
+.header__logo{
+	margin-top: 2rem;
+	display: grid;
+    grid-template-columns: 10% 80% 10%;
+		img{
+			height:250px;
+		}
+		.social-head{
+			grid-column: 3/4;
+		}
+		.logotipo{
+			grid-column: 2/3;
+		}
+		.carrito{
+			grid-column: 1/2;
+		}
+} 
+
+.header-nav{
+	margin: 2rem auto;
+	text-transform: uppercase;
+ 	font-family: $fuenteSecundaria;
+	font-size: 2.5rem;
+		a{
+			text-decoration: none;
+			color: $Negro;
+			margin: 1rem;
+			font-weight: 600;
+				}
+		a:hover{
+			text-decoration: underline;
+			text-decoration-color: $Marron;
+	}
+}
+.navbar-nav {
+	margin: 1rem auto;
+	text-transform: uppercase;
+	font-family: $fuenteSecundaria;
+	font-size: 2.5rem;
+	line-height: 3.5rem;
+		a{
+			text-decoration: none;
+			color: $Negro;
+			margin: 1rem;
+			font-weight: 600;
+			}	
+		a:hover{
+			text-decoration: underline;
+			text-decoration-color: $Marron;
+	}
+}

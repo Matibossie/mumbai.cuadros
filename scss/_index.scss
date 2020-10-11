@@ -1,0 +1,91 @@
+@import "colors";
+@import "fonts";
+
+/** INDEX **/
+
+.container{
+	padding: 0rem;
+	max-width: 100%;
+
+}
+.encabezado{
+	font-family: $fuentePrincipal;
+}
+/** CONTACTANOS **/
+
+.contactanos{
+	display: flex;
+	justify-content: center;
+	margin: 0rem auto;
+	margin-bottom: 2rem;
+		.contenedor{
+			margin-top: 3rem;
+			display:flex;
+			justify-content: center;
+		}
+}
+
+.contactanos__padre1{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.caja-form li{
+	display: flex;
+    flex-direction: column;
+    margin-bottom: .9rem;
+}
+textarea, input#name{
+	font-family: $fuentePrincipal;
+	font-size: 1.3rem
+}
+.contactanos__padre2{
+	margin: 1rem 0rem 0rem 2rem;
+}
+.caja-contactanos h2{
+	font-family: $fuentePrincipal;
+	margin: 0;
+	text-transform: capitalize;
+	margin-bottom: 2rem;
+}
+.caja-enviar{
+	display: inline-block;
+    position: relative;
+}
+.imagen-form img{
+	height: 320px;
+}
+.form {
+	border: none;
+	border-bottom: 1px solid #000;
+}
+/** NAVBAR RESPONSIVO**/
+		
+.header-resp{
+	margin: 0rem 0rem 1rem 0rem;
+	}	
+button.navbar-toggler{
+	border: none;
+}
+.navbar-toggler-icon{
+	width: 2em;
+	height: 2em;
+		.navbar.navbar-1{
+			background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
+		}
+}
+.navbar{
+	justify-content: center;
+}
+.toggler-example:focus{
+	outline: none;
+}
+@media  (max-width: 479px) {
+button.navbar-toggler.toggler-example{
+    transform: translate(0px, 0px);
+}
+.header-resp .container{
+	margin: 0 auto;
+	padding: 0;
+}
+}

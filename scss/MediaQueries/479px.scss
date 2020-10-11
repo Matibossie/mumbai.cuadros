@@ -1,0 +1,173 @@
+@import "colors";
+@import "fonts";
+
+/** Queries hasta 479px **/
+/*Index*/
+ @media  (max-width: 479px) {
+ .header-nav{
+	display: none;
+}
+h3{
+	font-size: 1.5rem;
+}
+
+.logo{
+	grid-template-rows: 80% 10% 10%;
+	grid-template-columns: 10% 80% 10%;
+		a{
+			grid-column: 2/3;
+		}	
+}
+	.logotipo img{
+		height: 200px;
+}
+.social-header{
+	grid-column: 3/4;
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin: 0rem 0rem 1rem 0rem;
+	grid-row: 1/2;
+}
+.icon-header{
+    height: 0.7rem;
+	width: 0.7rem;
+		img{
+			height: 1.5rem;
+			display: inline-block;
+			transform: translate(-7px, -8px);
+		}	
+}
+
+.carrito{
+	margin-left: 0.5rem;
+		.logo{
+			grid-column: 1/2;
+			}
+}
+
+.header__logo .carrito img{
+	margin-left: 2rem;
+   	}
+
+
+.contenedor{
+    width: 100%;
+}
+.foto-sobre-nosotros-index{
+	display: block;
+	text-align: center;
+		img{
+			height: 180px;
+		}
+}
+
+.textos{
+	text-align: justify;
+		p{
+			font-size: 1.2rem;
+		}
+}
+	.textos h2{
+		text-align: center;
+	}
+.caja-enviar {
+	display:flex;
+	justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    right: 0rem;
+}
+#test-info{
+	display: inline-block;
+    position: relative;
+    transform: translate(0px, 0px);
+}
+.leer-mas{
+	transform: translate(0px, 0px);
+		a{
+			font-size: 1.2rem;
+			padding: 0.5rem 0.3rem;
+		}
+}
+
+.imagen-form img{
+	display: none;
+}
+.contactanos{
+		margin: auto 2rem;
+		text-align: center;
+		display: block;
+			.contenedor{
+				display: block;
+			}	
+}
+#text-info {
+		position:relative;
+	    transform: translate(0px, 0px);
+	    	span {
+			    display: inline-block;
+			    padding: 5px 5px;
+			    text-align: center;
+			    font-weight: 700;
+			    border-radius: .5rem;
+			    font-size: 10px;
+		}
+	}
+
+.contenedor-footer{
+	padding-top: 1rem;
+	height: 24rem;
+	width: 105%;
+
+}
+span.separador{
+	display: none;
+}
+.nav{
+	display: block;
+		.footer-nav a{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			font-size: 2rem;
+		}
+}
+.icon-social{
+	transform: translate(-2px, -4px);
+}
+.icon-footer img{
+	transform: translate(-4px, -4px);
+}
+/*Galeria*/
+.catalogo{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+		li{
+ 		width: 28%;
+ 		margin: 0.3rem;
+		}
+	li:nth-child(4) img{	
+		object-position: -3px;
+	}	
+}
+
+/*Sobre Nosotros*/
+.foto-texto{
+	flex-direction: column;
+		.contenido{
+			margin: 2rem auto;
+			text-align: justify;
+			width: 90%;
+				h2{
+					text-align: center;
+				}
+			}
+		}	
+.footer-nav .nav{
+	display: flex;
+	flex-direction: column;
+}
+}
+

@@ -1,0 +1,43 @@
+@import "colors";
+@import "fonts";
+
+/** UTILIDADES **/
+html{
+	font-size:62,5%;
+	scroll-behavior: smooth;
+}
+body{
+	margin: 0;
+}
+ul{
+	list-style: none;
+	padding: 0;
+}
+*, ::after, ::before{
+	box-sizing: content-box;
+}
+.text-center{
+	text-align:center;
+}
+.text-justify{
+	text-align:justify;
+}
+.align-items{
+	align-items:center;
+}
+.text-link{
+	text-decoration: none;
+	color:black;
+}
+a.text-link{
+	display: contents;
+	font-weight: bold;
+		:hover{
+			color: black;
+	}
+}
+span.separador {
+    padding: 0;
+    display: inline;
+    font-size: 1rem;
+}

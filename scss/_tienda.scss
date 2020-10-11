@@ -1,0 +1,67 @@
+@import "colors";
+@import "fonts";
+
+/** TIENDA **/
+
+	.header__logo .carrito{
+	    grid-row: 1/2;
+	    display: flex;
+	    justify-content: center;
+	    	img{
+				height: 45px;
+				margin-left: 2rem;
+	}
+}
+/** SLIDER TIENDA **/
+.caja{
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+		h2{
+			font-size: 	1.6em;
+		}
+}
+
+$colors: (
+ caja1: #F6B8B8,
+ caja2:  #91DAF2,
+ caja3: #F8ED91,
+
+);
+
+@each $name-color, $bgcolor in $colors {
+  .#{$name-color} {
+       background-color: $bgcolor;
+   }
+}
+
+.tienda{
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.imagen-tienda img{
+	max-width: 200px;
+}
+.fa-1x {
+font-size: 1.5rem;
+}
+.navbar-toggler.toggler-example {
+cursor: pointer;
+}
+.dark-blue-text {
+color: #0A38F5;
+}
+.dark-pink-text {
+color: #AC003A;
+}
+.dark-amber-text {
+color: #ff6f00;
+}
+.dark-teal-text {
+color: #004d40;
+}
+.caja{
+	padding: 0rem 3rem 0rem 3rem;
+}

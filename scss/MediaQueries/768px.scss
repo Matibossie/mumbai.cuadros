@@ -1,0 +1,25 @@
+@import "colors";
+@import "fonts";
+
+/** Queries mayores a 768px **/
+  /*Utilidades*/
+@media (min-width: 768px){
+	.header-resp{
+		display: none;
+	}
+		.textos h2{
+		text-align: start!important;
+	}
+}
+
+ @media (min-width: 768px) and (max-width: 1000px) {
+
+/*Index*/
+.foto-sobre-nosotros-index{
+	width: 95%;
+}
+/*Sobre Nosotros*/
+	.foto-texto{
+		margin: 6rem auto;
+	}
+}
