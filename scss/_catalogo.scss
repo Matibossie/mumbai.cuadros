@@ -1,3 +1,8 @@
+@import "colors";
+@import "fonts";
+
+/** CATALOGO **/
+
 .catalogo{
     display: grid;
 	grid-template-columns: repeat(6, 120px);
