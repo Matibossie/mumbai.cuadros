@@ -1,4 +1,7 @@
 /** UTILIDADES **/
+body {
+  oveflow-x: hidden; }
+
 html {
   font-size: 62,5%;
   scroll-behavior: smooth; }
@@ -177,6 +180,10 @@ textarea, input#name {
   border-bottom: 1px solid #000; }
 
 /** NAVBAR RESPONSIVO**/
+.row {
+  margin-left: 0px;
+  margin-right: 0px; }
+
 .header-resp {
   margin: 0rem 0rem 1rem 0rem; }
 
@@ -1057,7 +1064,7 @@ form.whatsapp-form {
 
 /** Queries mayores a 768px **/
 /*Utilidades*/
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .header-resp {
     display: none; }
   .textos h2 {
@@ -1073,7 +1080,7 @@ form.whatsapp-form {
 
 /** Queries entre 480px y 767px **/
 /*Utilidades*/
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 768px) {
   .contenedor {
     width: 95%; }
   .header-resp .container {
