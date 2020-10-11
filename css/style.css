@@ -454,7 +454,8 @@ button.navbar-toggler {
   display: block;
   width: 100%;
   border: none;
-  border-bottom: 1px solid #ddd; }
+  border-bottom: 1px solid #ddd;
+  font-family: "Open Sans Condensed", sans-serif; }
 
 .datainput input:focus, .datainput textarea:focus {
   outline: none; }
