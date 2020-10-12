@@ -54,13 +54,14 @@
 	line-height: 2.4rem;
 }
 .overflow{
-	margin: 0 auto;
-}
-ul.flip-items.flipster__container{
-	transform: scale(0.7)!important;
-}
-.boton{
 	margin: 0rem auto;
+		img{
+			height: 250px;
+		}
+}
+
+.boton{
+	margin: 1rem auto;
 		a{
 		  font-size:0.8rem;
 		}

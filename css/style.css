@@ -209,6 +209,8 @@ button.navbar-toggler {
 /*** OVERFLOW ***/
 .overflow {
   margin: 2rem 0rem 2rem 0rem; }
+  .overflow img {
+    height: 250px; }
 
 .titulos {
   background-color: #000000;
@@ -1061,6 +1063,10 @@ form.whatsapp-form {
       grid-column: 1/2; }
   .header__logo .carrito img {
     margin-left: 2rem; }
+  .overflow {
+    margin: 0 auto; }
+    .overflow img {
+      height: 250px; }
   .contenedor {
     width: 100%; }
   .foto-sobre-nosotros-index {
@@ -1187,11 +1193,11 @@ form.whatsapp-form {
     font-size: 1.7rem;
     line-height: 2.4rem; }
   .overflow {
-    margin: 0 auto; }
-  ul.flip-items.flipster__container {
-    transform: scale(0.7) !important; }
-  .boton {
     margin: 0rem auto; }
+    .overflow img {
+      height: 250px; }
+  .boton {
+    margin: 1rem auto; }
     .boton a {
       font-size: 0.8rem; }
   .contenedor {
