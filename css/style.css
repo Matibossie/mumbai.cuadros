@@ -37,6 +37,9 @@ span.separador {
   display: inline;
   font-size: 1rem; }
 
+span.desaparecer {
+  display: none; }
+
 /** HEADER **/
 .header__logo {
   margin-top: 2rem;
