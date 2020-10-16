@@ -37,8 +37,8 @@ span.separador {
   display: inline;
   font-size: 1rem; }
 
-.desaparecer {
-  display: none; }
+li.nav-item a {
+  margin: 0 auto; }
 
 /** HEADER **/
 .header__logo {
