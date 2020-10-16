@@ -37,8 +37,8 @@ span.separador {
   display: inline;
   font-size: 1rem; }
 
-li.nav-item a {
-  margin: 0 auto; }
+.nav-item .navbar-brand {
+  margin: 0; }
 
 /** HEADER **/
 .header__logo {
