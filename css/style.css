@@ -37,7 +37,7 @@ span.separador {
   display: inline;
   font-size: 1rem; }
 
-span.desaparecer {
+.desaparecer {
   display: none; }
 
 /** HEADER **/

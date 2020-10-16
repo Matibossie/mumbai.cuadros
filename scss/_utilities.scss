@@ -14,9 +14,9 @@ ul{
 	padding: 0;
 }
 *, ::after, ::before{
-	box-sizing: content-box;
+	box-sizing: content-box; 
 }
-.text-center{
+.text-center{ 
 	text-align:center;
 }
 .text-justify{
@@ -41,6 +41,6 @@ span.separador {
     display: inline;
     font-size: 1rem;
 }
-span.desaparecer{
+.desaparecer{
 	display: none;
 }
