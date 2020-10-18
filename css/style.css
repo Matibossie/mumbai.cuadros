@@ -40,6 +40,9 @@ span.separador {
 .nav-item .navbar-brand {
   margin: 0; }
 
+.navbar-brand {
+  margin-right: 0rem; }
+
 /** HEADER **/
 .header__logo {
   margin-top: 2rem;
