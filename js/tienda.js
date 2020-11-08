@@ -16,13 +16,14 @@ function enviar() {
   function Cantidad(cantidad){
     this.cantidad = cantidad;
   }
-  let enviarCantidad = document.getElementById("cantidadCuadros").value;
+  enviarCantidad = document.getElementById("cantidadCuadros").value;
 
 nuevaCantidad = new Cantidad(enviarCantidad);
   if (enviarCantidad <1 || enviarCantidad > 9){
     alert("Ingrese una cantidad entre 1 y 9 cuadros");
  }else{
-document.getElementById("resultado").innerHTML = '<h2 class="titulo">'+enviarCantidad+'</h2>';
+  console.log(enviarCantidad)      
+  document.getElementById("resultado").innerHTML = '<h2 class="titulo">'+enviarCantidad+'</h2>';
 }
 }
 
@@ -44,10 +45,12 @@ function registrar() {
 
   let baseMedidas = [];
   function agregar() {
-      baseMedidas.push(nuevaMedida);
-      console.log(baseMedidas)  
-      document.getElementById("tabla").innerHTML += '<tbody><td>'+nuevaMedida.ancho+'</td><td>'+nuevaMedida.alto+'</td></tbody>';
-  };
+
+      for (baseMedidas == 0; baseMedidas.length < enviarCantidad; (baseMedidas.push(nuevaMedida))++) {
+        document.getElementById("tabla").innerHTML += '<tbody><td>'+nuevaMedida.ancho+'</td><td>'+nuevaMedida.alto+'</td></tbody>';
+      }  
+      alert("Llego al maximo de cuadros seleccionados");      
+    };
 
 
 
