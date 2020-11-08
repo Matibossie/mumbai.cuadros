@@ -112,27 +112,81 @@
 			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 			    <span class="sr-only">Next</span>
 			</a>
-		</div>
-			<main class="contenedor">
-				<div class="tienda text-center">
-					<div class="box-tienda">
-						<div class="imagen-tienda">
-							<h2 class="text-center titulo">
-								PROXIMAMENTE, VAS A DISFRUTAR UNA EXPERIENCIA DIFERENTE EN TU COMPRA!
-							</h2>
-				
-				<div class="contenido textos text-center">
-					<h3>¡Te invitamos a buscarnos en Instagram <br> y reservar tu próximo cuadro Mumbai! </h3>
-					<iframe title="Nuestro Instagram" width="315" height="415" src="https://www.instagram.com/p/CGJCd5vBRKx/embed" frameborder="0">
-					</iframe>
-				</div>
+        </div>
+    
+	<main class="contenedor">
 
-						</div>
-						<div class="caja-precio">
-							<form action=""></form>
-						</div>
-					</div>
-				</div>
+En este ecommerce el cliente a traves de 6 pasos logrará llegar al checkout.
+Primero elegirá cuantos cuadros quiere que compongan sus sets, en el segundo paso
+elegira que medida tendrá cada uno de esos cuadros.
+en el tercer paso eligirá por medio de un pop up los diseños personalizados
+para finalizar le mostrará un resumen de la compra.
+pasará a elegir medio de pago en la seccion 5 y la finalizara en la 6.
+
+Dinamicamente las secciones iran apareciendo y desapareciendo una a una.  
+
+        <h5>1 . Seleccione la cantidad de cuadros para su Set</h5>
+
+			<div id="cantidad">
+				<input type="number" id="cantidadCuadros" name="cantidadCuadros">
+				<button class="" type="button" id="enviar" onclick="enviar()"> Enviar </button>			
+			</div>
+			<div id="resultado">
+
+			</div>
+
+			<br>
+			<br>
+        <h5>2 . Seleccione las medidas que compondrán su Set</h2>
+
+			<form action="">
+				<select name="select" id="ancho" aria-placeholder="Ingrese Alto">
+					<option value="20">20</option> 
+					<option value="30" selected>30</option>
+					<option value="40">40</option>
+					<option value="50">50</option>
+					<option value="60">60</option>
+					<option value="70">70</option>				  
+				</select>
+				<select name="select" id="alto" aria-placeholder="Ingrese Alto">
+					<option value="20">20</option> 
+					<option value="30">30</option>
+					<option value="40" selected>40</option>
+					<option value="50">50</option>
+					<option value="60">60</option>
+					<option value="70">70</option>
+				  </select>
+		 
+				 
+
+				  
+				  <button class="" type="button" id="registrarMedida" onclick="registrar()"> + </button>			
+			</form>
+
+			<div class="tabla">
+				<table class="tablaMedidas" id="tabla">
+					<thead class="thead">
+						<tr>
+							<th>Ancho</th>
+							<th>Alto</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+
+<br>
+<br>
+<br>
+<br>
+        <h5>3 . Elegir modelos </h2>
+
+            En este momento se abriría un pop-up en el cual accederian al catalogo ya cargado en la seccion catalogo para elegir con clicks los cuadros.
+
+<br>
+<br>
+<br>
+<br>
+
 
 	</main>
 		
@@ -163,6 +217,12 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-	</footer>
+<script src="../js/tienda.js"></script>
+
+<script>
+
+</script>
+
+</footer>
 </body>
 </html>
