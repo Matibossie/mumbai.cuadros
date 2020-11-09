@@ -29,16 +29,16 @@ nuevaCantidad = new Cantidad(enviarCantidad);
 
 function registrar() {
   // console.log(" funciona");
-  function Medidas(ancho,alto){
-    this.ancho = ancho;
-    this.alto = alto;
+  function Medidas(anchoalto,horientacion){
+    this.anchoalto = anchoalto;
+    this.horientacion = horientacion;
   }
-  let registrarAncho = document.getElementById("ancho").value;
-  // console.log(registrarAncho);
-    let registrarAlto = document.getElementById("alto").value;
-  // console.log(registrarAlto);
+  let registrarAnchoalto = document.getElementById("anchoalto").value;
+  // console.log(registrarAnchoalto);
+    let registrarHorientacion = document.getElementById("horientacion").value;
+  // console.log(registrarHorientacion);
 
-  nuevaMedida = new Medidas(registrarAncho,registrarAlto);
+  nuevaMedida = new Medidas(registrarAnchoalto,registrarHorientacion);
       //console.log(nuevaMedida);
       agregar();
     } 
@@ -47,9 +47,11 @@ function registrar() {
   function agregar() {
 
       for (baseMedidas == 0; baseMedidas.length < enviarCantidad; (baseMedidas.push(nuevaMedida))++) {
-        document.getElementById("tabla").innerHTML += '<tbody><td>'+nuevaMedida.ancho+'</td><td>'+nuevaMedida.alto+'</td></tbody>';
+        document.getElementById("tabla").innerHTML += '<tbody><td>'+nuevaMedida.anchoalto+'</td><td>'+nuevaMedida.horientacion+'</td></tbody>';
       }  
-      alert("Llego al maximo de cuadros seleccionados");      
+      document.getElementById("tabla").innerHTML += '<hr>'+'Precio Total'+ ' $xxxxx';
+      document.getElementById("tabla").innerHTML += '<br><br><button class="" type="button" id="elegirModelos" onclick="elegirModelos()"> Elegir Modelos </button>';
+
     };
 
 
