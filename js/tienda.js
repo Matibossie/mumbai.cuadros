@@ -10,7 +10,7 @@ var numeroDePasos = document.createElement('div'); numeroDePasos.setAttribute("c
 var numeroUno = document.createElement('h2'); numeroUno.setAttribute("class", "numeroUno"); numeroUno.setAttribute ("id", "numeroUno");
 var primero = document.createTextNode("1"); numeroDePasos.appendChild(numeroUno); numeroUno.appendChild(primero);
 var tituloDePaso = document.createElement('div'); tituloDePaso.setAttribute("class", "tituloDePaso"); ("id", "tituloDePaso");
-var textoPaso = document.createElement('h2'); textoPaso.setAttribute("class", "textoPaso");
+var textoPaso = document.createElement('h2'); textoPaso.setAttribute("class", "textoPaso"); textoPaso.setAttribute("id", "textoPaso");
 var texto = document.createTextNode("¿Cuántos cuadros deseas comprar?"); tituloDePaso.appendChild(textoPaso); textoPaso.appendChild(texto);
 document.getElementById("pasosTienda").appendChild(numeroDePasos);
 document.getElementById("pasosTienda").appendChild(tituloDePaso);
@@ -51,7 +51,6 @@ function decrementar(){ // se crean la funcion y se agrega al evento onclick en 
     }else{
     var cantidad = document.getElementById('cantidad').value = --inicio; //se obtiene el valor del input, y se decrementa en 1 el valor que tenga.
     //console.log(inicio);
-
     }
 }
 
@@ -64,9 +63,6 @@ var siguiente = document.createTextNode("Continuar");
 next.appendChild(siguiente);
 document.getElementById("contenedor").appendChild(next);
 
-function cambiar(){
-    document.getElementById("")
-}
 
 var segundo = document.createTextNode("2"); numeroDePasos.appendChild(numeroUno); numeroUno.appendChild(primero);
 var segundotexto = document.createTextNode("¡Elegí el tamaño y orientación de tus cuadros!"); tituloDePaso.appendChild(textoPaso); textoPaso.appendChild(texto);
@@ -75,7 +71,7 @@ function cambiarNumeroDePaso(){
     document.getElementById("numeroUno").innerHTML = "2";
 }
 function cambiarTituloDePaso(){
-    document.getElementById("tituloDePaso").innerHTML = "¡Elegí las medidas y orientación de tus cuadros!";
+    document.getElementById("textoPaso").innerHTML = "¡Elegí las medidas y orientación de tus cuadros!";
 }
 
 
@@ -85,6 +81,7 @@ document.getElementById("next").onclick = function() {
     }else{
         sessionStorage.setItem('cantidad',inicio);
         // console.log(inicio);
+
         document.getElementById("contenedor").removeChild(contador); 
         cambiarNumeroDePaso();
         cambiarTituloDePaso();
