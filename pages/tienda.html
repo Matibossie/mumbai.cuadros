@@ -112,79 +112,8 @@
 			</a>
         </div>
     
-	<main class="contenedor">
-
-En este ecommerce el cliente a traves de 6 pasos logrará llegar al checkout.
-Primero elegirá cuantos cuadros quiere que compongan sus sets, en el segundo paso
-elegira que medida tendrá cada uno de esos cuadros.
-en el tercer paso eligirá por medio de un pop up los diseños personalizados
-para finalizar le mostrará un resumen de la compra.
-pasará a elegir medio de pago en la seccion 5 y la finalizara en la 6.
-
-Dinamicamente las secciones iran apareciendo y desapareciendo una a una.  
-
-        <h5>1 . Seleccione la cantidad de cuadros para su Set</h5>
-
-			<div id="cantidad">
-				<input type="number" id="cantidadCuadros" name="cantidadCuadros">
-				<button class="" type="button" id="enviar" onclick="enviar()"> Enviar </button>			
-			</div>
-			<div id="resultado">
-
-			</div>
-
-			<br>
-			<br>
-        <h5>2 . Seleccione las medidas que compondrán su Set</h2>
-
-			<form action="">
-				<select name="select" id="anchoalto">
-					<option value="20x20">20x20 $500</option> 
-					<option value="20x30">20x30 $620</option> 
-					<option value="30x30">30x30 $740</option>
-		   <option selected value="30x40">30x40 $850</option>
-					<option value="32x47">32x47 $950</option>
-					<option value="40x50">40x50 $1450</option>
-					<option value="40x60">40x60 $1750</option>
-					<option value="50x60">50x60 $1850</option>	
-					<option value="50x70">50x70 $2250</option>				  
-			  
-				</select>
-				<select name="select" id="horientacion">
-					<option value="vertical" selected>Vertical</option> 
-					<option value="horizontal">Horizontal</option>
-				  </select>
-		 
-				 
-
-				  
-				  <button class="" type="button" id="registrarMedida" onclick="registrar()"> + </button>			
-			</form>
-
-			<div class="tabla">
-				<table class="tablaMedidas" id="tabla">
-					<thead class="thead">
-						<tr>
-							<th>Tamaño</th>
-							<th>Horientación</th>
-						</tr>
-					</thead>
-				</table>
-			</div>
-
-<br>
-<br>
-<br>
-<br>
-        <h5>3 . Elegir modelos </h2>
-
-            En este momento se abriría un pop-up en el cual accederian al catalogo ya cargado en la seccion catalogo para elegir con clicks los cuadros.
-
-<br>
-<br>
-<br>
-<br>
-
+	<main class="contenedor" id="contenedor">
+		<div id="pasosTienda" class="pasosTienda"> </div>
 
 	</main>
 		
@@ -224,3 +153,57 @@ Dinamicamente las secciones iran apareciendo y desapareciendo una a una.
 </footer>
 </body>
 </html>
+
+
+
+
+<!-- 
+
+			<div id="cantidad">
+				<input type="number" id="cantidadCuadros" name="cantidadCuadros">
+				<button class="" type="button" id="enviar" onclick="enviar()"> Enviar </button>			
+			</div>
+			<div id="resultado">
+
+			</div> -->
+
+
+        <!-- <h5>2 . Seleccione las medidas que compondrán su Set</h2>
+
+			<form action="">
+				<select name="select" id="anchoalto">
+					<option value="20x20">20x20 $500</option> 
+					<option value="20x30">20x30 $620</option> 
+					<option value="30x30">30x30 $740</option>
+		   <option selected value="30x40">30x40 $850</option>
+					<option value="32x47">32x47 $950</option>
+					<option value="40x50">40x50 $1450</option>
+					<option value="40x60">40x60 $1750</option>
+					<option value="50x60">50x60 $1850</option>	
+					<option value="50x70">50x70 $2250</option>				  
+			  
+				</select>
+				<select name="select" id="horientacion">
+					<option value="vertical" selected>Vertical</option> 
+					<option value="horizontal">Horizontal</option>
+				  </select>
+		 
+				 
+
+				  
+				  <button class="" type="button" id="registrarMedida" onclick="registrar()"> + </button>			
+			</form>
+
+			<div class="tabla">
+				<table class="tablaMedidas" id="tabla">
+					<thead class="thead">
+						<tr>
+							<th>Tamaño</th>
+							<th>Horientación</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+			<div id="subTotal">
+
+			</div> -->
