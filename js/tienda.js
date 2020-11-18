@@ -72,6 +72,7 @@ function cambiarNumeroDePaso(){
 }
 function cambiarTituloDePaso(){
     document.getElementById("textoPaso").innerHTML = "¡Elegí las medidas y orientación de tus cuadros!";
+        
 }
 
 
