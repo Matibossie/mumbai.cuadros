@@ -110,7 +110,7 @@ document.getElementById("next").onclick = function() {
 // }
 // sessionStorage.setItem('Cantidad',enviarCantidad);
 // }
-
+ 
 
 // function registrar() {
 //   // console.log(" funciona");
