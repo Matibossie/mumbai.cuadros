@@ -112,50 +112,160 @@
 			</a>
         </div>
     
-	<main class="contenedor" id="contenedor">
-		<div id="pasosTienda" class="pasosTienda"> </div>
-
-	</main>
-		
-	<footer class="contenedor-footer">
-			<div class="footer-nav text-center">
-				<nav class="nav">
-					<a href="../index.html">Inicio  <span class="separador">&nbsp-&nbsp</span></a>
-					<a href="tienda.html">Tienda  <span class="separador">&nbsp-&nbsp</span></a>
-		            <a href="catalogo.html">Catálogo  <span class="separador">&nbsp-&nbsp</span></a>
-		            <a href="sobre-nosotros.html">Sobre nosotros  <span class="separador">&nbsp-&nbsp</span></a>
-		            <a href="../index.html#contacto">Contactanos</a>
-				</nav>
+<main class="contenedor" id="contenedor">
+	<div id="pasosTienda" class="pasosTienda"> 
+<!--  Paso 1  -->
+	<div class="PasoUno" id="PasoUno">
+		<div class="primerPaso" id="primerPaso">
+				<div class="circulo"><h2 class="numero" id="numero">1</h2></div>
+				<h2 class="textoPaso" id="textoPaso">¿Cuántos cuadros deseas comprar?</h2>
+		</div>
+			<div class="contador" id="contador">
+				<input type="text" class="cantidad" id="cantidad" value="0">
+				<div class="cajaSignos">
+					<button class="aumentar" id="incrementar" onclick="incrementar()"> + </button>
+					<button class="disminuir" id="decrementar" onclick="decrementar()"> - </button>
+				</div>
 			</div>
+			<div>
+			<button class="next boton" id="next">Continuar</button>
+			</div>
+		</div>
+	</div>	
+<!--  Paso 2  -->		
+<div class="PasoDos hide" id="PasoDos">
+	<div class="segundoPaso" id="segundoPaso">
+			<div class="circulo"><h2 class="numero" id="numero">2</h2></div>
+				<h2 class="textoPaso" id="textoPaso">¡Elegí las medidas y orientación de tus cuadros!</h2>
+			</div>
+			<div class="orientacion">
+				<button class="Horizontal boton next" id="Horizontal" >Horizontal</button>
+				<button class="Vertical boton next" id="Vertical" >Vertical</button>
+			</div>
+			<div class="medidasVerticales" id="medidasVerticales">
 
-				<div class="social-media text-center">
-					<div class="icon icon-footer"><a target="_blank" href="https://www.instagram.com/mumbai.cuadros/"><img class="icon-social" src="../img/icon/instagram.svg" alt="logo-instagram" rel="noopener"></a></div>
-					<div class="icon icon-footer"><a target="_blank" href="https://www.facebook.com/mumbai.cuadros"><img class="icon-social" src="../img/icon/facebook.svg" alt="logo-facebook"rel="noopener"></a></div>
-					<div class="icon icon-footer"><a target="_blank" href="https://wa.link/1d4ggt"><img class="icon-social" src="../img/icon/whatsapp.svg" alt="logo-whatsapp" rel="noopener"></a></div>
-					<div class="icon icon-footer"><a target="_blank" href="https://open.spotify.com/playlist/5odxXgNcI5NUerGLa0yGD3?si=jtO4ygPZQROUPo_aH6CYCA"><img class="icon-social" src="../img/icon/spotify.svg" alt="logo-spotify" rel="noopener"></a></div>
-				</div>     	
-     	
-        	<div class="copyright text-center">
-        		<p class="mumbai">Mumbai Cuadros </p>
-        		<p class="derechos">Todos los derechos reservados - 2020</p>
-        	</div>
+				<div class="cuadro" id="20x30V"><img src="../img/tienda/posterV.png" alt="poster" srcset="">
+					<div class="cajaTexto">
+						<h4 class="medida">20x30</h4>
+						<h4 class="rotacion">Vertical</h4>
+						<h4 class="precio">$500.-</h4>
+					</div>
+					<div class="contadorInterno" id="contadorInterno">
+						<button class="negativo" id="negativo" onclick="negativo()"> - </button>
+						<input type="text" class="valor" id="valor" value="0">
+						<button class="positivo" id="positivo" onclick="positivo()"> + </button>
+					</div>
+				</div>
+				<div class="cuadro" id="30x40V"><img src="../img/tienda/posterV.png" alt="poster" srcset="">
+					<div class="cajaTexto">
+						<h4 class="medida">30x40</h4>
+						<h4 class="rotacion">Vertical</h4>
+						<h4 class="precio">$700.-</h4>
+					</div>
+					<div class="contadorInterno" id="contadorInterno">
+						<button class="negativo" id="negativo" onclick="negativo()"> - </button>
+						<input type="text" class="valor" id="valor" value="0">
+						<button class="positivo" id="positivo" onclick="positivo()"> + </button>
+					</div>
+				</div>
+				<div class="cuadro" id="32x47V"><img src="../img/tienda/posterV.png" alt="poster" srcset="">
+					<div class="cajaTexto">
+						<h4 class="medida">32x47</h4>
+						<h4 class="rotacion">Vertical</h4>
+						<h4 class="precio">$900.-</h4>
+					</div>
+					<div class="contadorInterno" id="contadorInterno">
+						<button class="negativo" id="negativo" onclick="negativo()"> - </button>
+						<input type="text" class="valor" id="valor" value="0">
+						<button class="positivo" id="positivo" onclick="positivo()"> + </button>
+					</div>
+				</div> 
+			</div>
+			<div class="medidasHorizontales hide" id="medidasHorizontales">
+
+				<div class="cuadro" id="20x30H"><img src="../img/tienda/posterH.png" alt="poster" srcset="">
+					<div class="cajaTexto">
+						<h4 class="medida">20x30</h4>
+						<h4 class="rotacion">Horizontal</h4>
+						<h4 class="precio">$500.-</h4>
+					</div>
+					<div class="contadorInterno" id="contadorInterno">
+						<button class="negativo" id="negativo" onclick="negativo()"> - </button>
+						<input type="text" class="valor" id="valor" value="0">
+						<button class="positivo" id="positivo" onclick="positivo()"> + </button>
+					</div>
+				</div>
+				<div class="cuadro" id="30x40H"><img src="../img/tienda/posterH.png" alt="poster" srcset="">
+					<div class="cajaTexto">
+						<h4 class="medida">30x40</h4>
+						<h4 class="rotacion">Horizontal</h4>
+						<h4 class="precio">$700.-</h4>
+					</div>
+					<div class="contadorInterno" id="contadorInterno">
+						<button class="negativo" id="negativo" onclick="negativo()"> - </button>
+						<input type="text" class="valor" id="valor" value="0">
+						<button class="positivo" id="positivo" onclick="positivo()"> + </button>
+					</div>
+				</div>
+				<div class="cuadro" id="32x47H"><img src="../img/tienda/posterH.png" alt="poster" srcset="">
+					<div class="cajaTexto">
+						<h4 class="medida">32x47</h4>
+						<h4 class="rotacion">Horizontal</h4>
+						<h4 class="precio">$900.-</h4>
+					</div>
+					<div class="contadorInterno" id="contadorInterno">
+						<button class="negativo" id="negativo" onclick="negativo()"> - </button>
+						<input type="text" class="valor" id="valor" value="0">
+						<button class="positivo" id="positivo" onclick="positivo()"> + </button>
+					</div>
+				</div> 
+			</div>		
+			<div class="botonesPasoDos">
+				<button class="next boton" id="previous">Atrás</button>
+				<button class="next boton" id="next">Continuar</button>
+			</div>
+		</div>
+	</div>	
+</div>
+	<br>
+	<br>
+	<br>
+	<br>
+</main>
+
+<footer class="contenedor-footer">
+		<div class="footer-nav text-center">
+			<nav class="nav">
+				<a href="../index.html">Inicio  <span class="separador">&nbsp-&nbsp</span></a>
+				<a href="tienda.html">Tienda  <span class="separador">&nbsp-&nbsp</span></a>
+				<a href="catalogo.html">Catálogo  <span class="separador">&nbsp-&nbsp</span></a>
+				<a href="sobre-nosotros.html">Sobre nosotros  <span class="separador">&nbsp-&nbsp</span></a>
+				<a href="../index.html#contacto">Contactanos</a>
+			</nav>
+		</div>
+
+			<div class="social-media text-center">
+				<div class="icon icon-footer"><a target="_blank" href="https://www.instagram.com/mumbai.cuadros/"><img class="icon-social" src="../img/icon/instagram.svg" alt="logo-instagram" rel="noopener"></a></div>
+				<div class="icon icon-footer"><a target="_blank" href="https://www.facebook.com/mumbai.cuadros"><img class="icon-social" src="../img/icon/facebook.svg" alt="logo-facebook"rel="noopener"></a></div>
+				<div class="icon icon-footer"><a target="_blank" href="https://wa.link/1d4ggt"><img class="icon-social" src="../img/icon/whatsapp.svg" alt="logo-whatsapp" rel="noopener"></a></div>
+				<div class="icon icon-footer"><a target="_blank" href="https://open.spotify.com/playlist/5odxXgNcI5NUerGLa0yGD3?si=jtO4ygPZQROUPo_aH6CYCA"><img class="icon-social" src="../img/icon/spotify.svg" alt="logo-spotify" rel="noopener"></a></div>
+			</div>     	
+	
+		<div class="copyright text-center">
+			<p class="mumbai">Mumbai Cuadros </p>
+			<p class="derechos">Todos los derechos reservados - 2020</p>
+		</div>
 
 	<!-- JS, Popper.js, and jQuery -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-	<script src="../js/tienda.js"></script>
-
-<script>
-
-</script>
-
+	<script src="../js/tiendaOperacional.js"></script>
+	<script src="../js/tiendaVisual.js"></script>
+	<script></script>
 </footer>
 </body>
 </html>
-
-
-
 
 <!-- 
 

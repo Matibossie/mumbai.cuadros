@@ -67,26 +67,33 @@ color: #004d40;
 }
 
 /// ESTILOS CSS JAVASCRIPT
+.hide{
+	display: none;
+}
+
 .pasosTienda{
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 }
-h2.numeroUno {
-    font-size: 1.5rem;
-	margin: -10px 0px;
+.primerPaso, .segundoPaso{
+	display: flex;
+	justify-content: center;
+	h2.numero{
+		font-weight: bold;
+		font-family: $fuentePrincipal;
+		text-align: center;
+		line-height: inherit;
+	}
 }
-.numeroDePaso{
-	padding: 1rem;
-    background-color: lightgray;
-    border-radius: 50%;
-    height: 10px;
-    width: 10px;
+.circulo{
+	width: 50px;
+	height: 50px;		
+	background-color: lightgray;
+	border-radius: 50%;
 }
-.tituloDePaso{
-	margin-left: 1rem;
-}
-h2.textoPaso{
-	font-family: $fuentePrincipal;
+.textoPaso{
+	margin-left: 2rem;
 }
 .contador{
 	display: flex;
@@ -121,9 +128,70 @@ h2.textoPaso{
 .next {
     border: none;
     background-color: lightgray;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 4rem;
 	border-radius: 6px;
+}
+button .next .boton{
+	margin: 0rem auto;
 }
 button.next.boton{
 	outline: none;
+}
+.boton{
+	margin: 0.5rem;
+}
+
+// Paso dos del carrito - css de los botones de las medidas
+.botonesPasoDos{
+	display: flex;
+	justify-content: center;
+}
+
+.contenedorMedidas{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 2rem 0rem;
+}
+.contenedorMedidas button{
+	margin: 0.5rem;
+	padding: 0.5rem;
+}
+.orientacion{
+	display: flex;
+		button{
+			flex: 0.3;		
+		}
+}
+.medidasVerticales, .medidasHorizontales{
+	text-align: center;
+}
+.cuadro{
+	position: relative;
+	display: inline-block; 
+		.cajaTexto{
+			position: absolute;
+			width: 100%;
+			top: 20%;
+		}
+		h4{text-align: center;}
+			.rotacion{top: 40%;}
+			.medida{top: 30%;}
+			.precio{top: 50%;}
+	.contadorInterno{
+		position: absolute;
+		top: 60%;
+		font-size: 2rem;
+		.negativo, .positivo{
+			border: none;
+			background-color: transparent;
+			outline: none;
+		}
+		.valor{			
+			border: none;
+			text-align: center;
+			width: 25%;		
+			outline: none;
+		}
+	}
 }
