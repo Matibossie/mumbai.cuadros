@@ -20,3 +20,9 @@ $('#Horizontal').click(function(){
         $("#medidasVerticales").fadeIn(600)}	
     ); 
  });
+
+ $('#previous').click(function(){ 
+    $("div.PasoDos").slideUp(1200, function(){
+        $("div.PasoUno").slideDown(1200, function(){}); 
+    }); 
+})    
