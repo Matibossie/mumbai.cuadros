@@ -30,21 +30,21 @@ document.getElementById("next").onclick = function() {
     }else{
         sessionStorage.setItem('cantidad',inicio);
         //console.log(inicio);
-        document.getElementById("PasoUno").classList.add("hide");
-        document.getElementById("PasoDos").classList.remove("hide");
+        // document.getElementById("PasoUno").classList.add("hide");
+        // document.getElementById("PasoDos").classList.remove("hide");
     }
 }
 document.getElementById("previous").onclick = function() {
-    document.getElementById("PasoUno").classList.remove("hide");
-    document.getElementById("PasoDos").classList.add("hide");
+    // document.getElementById("PasoUno").classList.remove("hide");
+    // document.getElementById("PasoDos").classList.add("hide");
 }
 document.getElementById("Horizontal").onclick = function() {
-    document.getElementById("medidasVerticales").classList.add("hide");
-    document.getElementById("medidasHorizontales").classList.remove("hide");
+    // document.getElementById("medidasVerticales").classList.add("hide");
+    // document.getElementById("medidasHorizontales").classList.remove("hide");
 }
 document.getElementById("Vertical").onclick = function() {
-    document.getElementById("medidasHorizontales").classList.add("hide");
-    document.getElementById("medidasVerticales").classList.remove("hide");
+    // document.getElementById("medidasHorizontales").classList.add("hide");
+    // document.getElementById("medidasVerticales").classList.remove("hide");
 };
  
 var sumaCuadros = parseInt(document.getElementById('valor1').value)+parseInt(document.getElementById('valor2').value)+parseInt(document.getElementById('valor3').value)+parseInt(document.getElementById('valor4').value)+parseInt(document.getElementById('valor5').value)+parseInt(document.getElementById('valor6').value);
