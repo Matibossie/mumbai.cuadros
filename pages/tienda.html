@@ -137,100 +137,114 @@
 
 
 <!--  Paso 2  -->		
-<div class="PasoDos hide" id="PasoDos">
-	<div class="segundoPaso" id="segundoPaso">
-			<div class="circulo"><h2 class="numero" id="numero">2</h2></div>
-				<h2 class="textoPaso" id="textoPaso">¡Elegí las medidas y orientación de tus cuadros!</h2>
-			</div>
-			<div class="orientacion">
-				<button class="Horizontal boton next" id="Horizontal" >Horizontal</button>
-				<button class="Vertical boton next" id="Vertical" >Vertical</button>
-			</div>
-			<div class="medidasVerticales" id="medidasVerticales">
+	<div class="PasoDos hide" id="PasoDos">
+		<div class="segundoPaso" id="segundoPaso">
+				<div class="circulo"><h2 class="numero" id="numero">2</h2></div>
+					<h2 class="textoPaso" id="textoPaso">¡Elegí las medidas y orientación de tus cuadros!</h2>
+				</div>
+				<div class="orientacion">
+					<button class="Horizontal boton next" id="Horizontal" >Horizontal</button>
+					<button class="Vertical boton next" id="Vertical" >Vertical</button>
+				</div>
+				<div class="medidasVerticales calculo" id="medidasVerticales">
 
-				<div class="cuadro" id="20x30V"><img src="../img/tienda/posterV.png" alt="poster" srcset="">
-					<div class="cajaTexto">
-						<h4 class="medida">20x30</h4>
-						<h4 class="rotacion">Vertical</h4>
-						<h4 class="precio">$500.-</h4>
+					<div class="cuadro" id="20x30V"><img src="../img/tienda/posterV.png" alt="poster" srcset="">
+						<div class="cajaTexto">
+							<h4 class="medida">20x30</h4>
+							<h4 class="rotacion">Vertical</h4>
+							<h4 class="precio">$500.-</h4>
+						</div>
+						<div class="contadorInterno" id="contadorInterno">
+							<button class="negativo" id="negativo" onclick="negativo20x30V()" > - </button>
+							<input type="number" class="valor" id="valor1" value = "0" >
+							<button class="positivo" id="positivo suman" onclick="positivo20x30V()" > + </button>
+						</div>
 					</div>
-					<div class="contadorInterno" id="contadorInterno">
-						<button class="negativo" id="negativo" > - </button>
-						<input type="number" class="valor" id="valor1" value = "0" >
-						<button class="positivo" id="positivo" > + </button>
+					<div class="cuadro" id="30x40V"><img src="../img/tienda/posterV.png" alt="poster" srcset="">
+						<div class="cajaTexto">
+							<h4 class="medida">30x40</h4>
+							<h4 class="rotacion">Vertical</h4>
+							<h4 class="precio">$700.-</h4>
+						</div>
+						<div class="contadorInterno" id="contadorInterno">
+							<button class="negativo" id="negativo" onclick="negativo30x40V()"> - </button>
+							<input type="number" class="valor" id="valor2" value = "0" >
+							<button class="positivo" id="positivo suman" onclick="positivo30x40V()"> + </button>
+						</div>
 					</div>
+					<div class="cuadro" id="32x47V"><img src="../img/tienda/posterV.png" alt="poster" srcset="">
+						<div class="cajaTexto">
+							<h4 class="medida">32x47</h4>
+							<h4 class="rotacion">Vertical</h4>
+							<h4 class="precio">$900.-</h4>
+						</div>
+						<div class="contadorInterno" id="contadorInterno">
+							<button class="negativo" id="negativo" onclick="negativo32x47V()"> - </button>
+							<input type="number" class="valor" id="valor3" value = "0" >
+							<button class="positivo" id="positivo suman" onclick="positivo32x47V()"> + </button>
+						</div>
+					</div> 
 				</div>
-				<div class="cuadro" id="30x40V"><img src="../img/tienda/posterV.png" alt="poster" srcset="">
-					<div class="cajaTexto">
-						<h4 class="medida">30x40</h4>
-						<h4 class="rotacion">Vertical</h4>
-						<h4 class="precio">$700.-</h4>
-					</div>
-					<div class="contadorInterno" id="contadorInterno">
-						<button class="negativo" id="negativo" > - </button>
-						<input type="number" class="valor" id="valor2" value = "0" >
-						<button class="positivo" id="positivo" > + </button>
-					</div>
-				</div>
-				<div class="cuadro" id="32x47V"><img src="../img/tienda/posterV.png" alt="poster" srcset="">
-					<div class="cajaTexto">
-						<h4 class="medida">32x47</h4>
-						<h4 class="rotacion">Vertical</h4>
-						<h4 class="precio">$900.-</h4>
-					</div>
-					<div class="contadorInterno" id="contadorInterno">
-						<button class="negativo" id="negativo" > - </button>
-						<input type="number" class="valor" id="valor3" value = "0" >
-						<button class="positivo" id="positivo" > + </button>
-					</div>
-				</div> 
-			</div>
-			<div class="medidasHorizontales hide" id="medidasHorizontales">
+				<div class="medidasHorizontales calculo hide" id="medidasHorizontales">
 
-				<div class="cuadro" id="20x30H"><img src="../img/tienda/posterH.png" alt="poster" srcset="">
-					<div class="cajaTexto">
-						<h4 class="medida">20x30</h4>
-						<h4 class="rotacion">Horizontal</h4>
-						<h4 class="precio">$500.-</h4>
+					<div class="cuadro" id="20x30H"><img src="../img/tienda/posterH.png" alt="poster" srcset="">
+						<div class="cajaTexto">
+							<h4 class="medida">20x30</h4>
+							<h4 class="rotacion">Horizontal</h4>
+							<h4 class="precio">$500.-</h4>
+						</div>
+						<div class="contadorInterno" id="contadorInterno">
+							<button class="negativo" id="negativo" onclick="negativo20x30H()"> - </button>
+							<input type="number" class="valor" id="valor4" value = "0" >
+							<button class="positivo" id="positivo suman" onclick="positivo20x30H()"> + </button>
+						</div>
 					</div>
-					<div class="contadorInterno" id="contadorInterno">
-						<button class="negativo" id="negativo" > - </button>
-						<input type="number" class="valor" id="valor4" value = "0" >
-						<button class="positivo" id="positivo" > + </button>
+					<div class="cuadro" id="30x40H"><img src="../img/tienda/posterH.png" alt="poster" srcset="">
+						<div class="cajaTexto">
+							<h4 class="medida">30x40</h4>
+							<h4 class="rotacion">Horizontal</h4>
+							<h4 class="precio">$700.-</h4>
+						</div>
+						<div class="contadorInterno" id="contadorInterno">
+							<button class="negativo" id="negativo" onclick="negativo30x40H()"> - </button>
+							<input type="number" class="valor" id="valor5" value = "0" >
+							<button class="positivo" id="positivo suman" onclick="positivo30x40H()"> + </button>
+						</div>
 					</div>
+					<div class="cuadro" id="32x47H"><img src="../img/tienda/posterH.png" alt="poster" srcset="">
+						<div class="cajaTexto">
+							<h4 class="medida">32x47</h4>
+							<h4 class="rotacion">Horizontal</h4>
+							<h4 class="precio">$900.-</h4>
+						</div>
+						<div class="contadorInterno" id="contadorInterno">
+							<button class="negativo" id="negativo" onclick="negativo32x47H()"> - </button>
+							<input type="number" class="valor" id="valor6" value = "0" >
+							<button class="positivo" id="positivo suman" onclick="positivo32x47H()"> + </button>
+						</div>
+					</div> 
+				</div>		
+				<div class="botonesPasoDos">
+					<button class="next boton" id="previous">Atrás</button>
+					<button class="next boton" id="next2" disabled>Continuar</button>
 				</div>
-				<div class="cuadro" id="30x40H"><img src="../img/tienda/posterH.png" alt="poster" srcset="">
-					<div class="cajaTexto">
-						<h4 class="medida">30x40</h4>
-						<h4 class="rotacion">Horizontal</h4>
-						<h4 class="precio">$700.-</h4>
-					</div>
-					<div class="contadorInterno" id="contadorInterno">
-						<button class="negativo" id="negativo" ></button> - </button>
-						<input type="number" class="valor" id="valor5" value = "0" >
-						<button class="positivo" id="positivo" > + </button>
-					</div>
-				</div>
-				<div class="cuadro" id="32x47H"><img src="../img/tienda/posterH.png" alt="poster" srcset="">
-					<div class="cajaTexto">
-						<h4 class="medida">32x47</h4>
-						<h4 class="rotacion">Horizontal</h4>
-						<h4 class="precio">$900.-</h4>
-					</div>
-					<div class="contadorInterno" id="contadorInterno">
-						<button class="negativo" id="negativo" > - </button>
-						<input type="number" class="valor" id="valor6" value = "0" >
-						<button class="positivo" id="positivo" > + </button>
-					</div>
-				</div> 
-			</div>		
-			<div class="botonesPasoDos">
-				<button class="next boton" id="previous">Atrás</button>
-				<button class="next boton" id="next2">Continuar</button>
 			</div>
-		</div>
-	</div>	
-</div>
+		</div>	
+	</div>
+
+<!--  Paso 3  -->	
+	<div class="PasoTres" id="PasoTres" style="display: none;">
+		<div class="segundoPaso" id="segundoPaso">
+			<div class="circulo"><h2 class="numero" id="numero">3</h2></div>
+				<h2 class="textoPaso" id="textoPaso">Ingresar los diseños elegidos!</h2>
+				<br>
+				<br>
+				<br>
+			</div>
+		</div>		
+	</div>
+
+
 </main>
 
 <footer class="contenedor-footer">

@@ -7,22 +7,31 @@ $('#next').click(function(){
         $("div.PasoDos").slideDown(1200, function(){}); 
     }); 
 })    
-
+///////////////////////////////////////////////////////////
 $('#Horizontal').click(function(){ 
     $("#medidasVerticales").fadeOut(600, function(){ 
         $("#medidasHorizontales").fadeIn(600)
-    }	
-    ); //al terminar, se ejecuta la función 
+        }	
+    ); 
  });
  
  $('#Vertical').click(function(){ 
     $("#medidasHorizontales").fadeOut(600, function(){ 
-        $("#medidasVerticales").fadeIn(600)}	
+        $("#medidasVerticales").fadeIn(600)
+        }	
     ); 
  });
-
+//////////////////////////////////////////////////////////////
  $('#previous').click(function(){ 
     $("div.PasoDos").slideUp(1200, function(){
-        $("div.PasoUno").slideDown(1200, function(){}); 
+        $("div.PasoUno").slideDown(1200, function(){}
+        ); 
     }); 
-})    
+})
+///////////////////////////////////////////////////////////////
+$('#next2').click(function(){ 
+    $("div.PasoDos").slideUp(1200, function(){
+        $("div.PasoTres").slideDown(1200, function(){}
+        );
+    });
+})
