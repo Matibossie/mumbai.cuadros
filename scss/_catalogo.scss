@@ -17,6 +17,33 @@
 			height: 100%;
 		}
 }
+
+.categorias{
+	margin-bottom: 2rem;
+	display: flex;
+    list-style: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.categorias li{
+	background-color: black;
+    color: white;
+    padding: 0.2rem 0.5rem;
+	border-radius: 5px;
+	margin: 0.2rem 0.4rem;
+}
+.categorias li:hover{
+	cursor: pointer;
+	background-color: white;
+	color: black;
+}
+// activar botones
+li.active{
+	background-color: white;
+    color: black;
+	text-decoration: underline;
+	font-weight: bold;
+}
 /*** DISPOSICION DE IMAGENES EN EL GRID ***/
 	
 .catalogo li:nth-child(5) {
