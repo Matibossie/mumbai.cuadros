@@ -1,16 +1,27 @@
 let inicio = 0;
 let boton = document.querySelector("#next");
 let boton2 = document.querySelector("#next2");
-let TIENDA = {
-    "cantidadCuadros": 0,	
-    "totalVertical20x30": 0,
-	"totalVertical30x40": 0,
-	"totalVertical32x47": 0,
-	"totalHorizontal20x30": 0,
-	"totalHorizontal30x40": 0,
-	"totalHorizontal32x47": 0,
+// let TIENDA = {
+//     "cantidadCuadros": 0,	
+//     "totalVertical20x30": 0,
+// 	"totalVertical30x40": 0,
+// 	"totalVertical32x47": 0,
+// 	"totalHorizontal20x30": 0,
+// 	"totalHorizontal30x40": 0,
+// 	"totalHorizontal32x47": 0,
+// }
+var CUADROS = { "cantidadCuadros": 0}
 
-}
+var TIENDA = {"Cuadros":[
+        {"Medida":"Vertical20x30","Cantidad":0},
+        {"Medida":"Vertical30x40","Cantidad":0},
+        {"Medida":"Vertical32x47","Cantidad":0},
+        {"Medida":"Horizontal20x30","Cantidad":0},
+        {"Medida":"Horizontal30x40","Cantidad":0},
+        {"Medida":"Horizontal32x47","Cantidad":0},
+]};
+
+
 
 function incrementar(){ // se crean la funcion y se agrega al evento onclick en en la etiqueta button con id aumentar
     if(inicio==10){
@@ -36,10 +47,11 @@ document.getElementById("next").onclick = function() {
         if(inicio==0){
             alert("Elija más que 0 cuadros");
         }else{
-            TIENDA.cantidadCuadros = inicio   //el total (en número), que ingresó el usuario en pantalla
-            localStorage.setItem("tienda", JSON.stringify(TIENDA))
+            CUADROS.cantidadCuadros = inicio   //el total (en número), que ingresó el usuario en pantalla
+            localStorage.setItem("cuadros", JSON.stringify(CUADROS))
             // localStorage.setItem('cantidad',inicio); 
             // console.log(inicio);
+            
         }
     }
 
@@ -49,7 +61,7 @@ document.getElementById("next").onclick = function() {
             alert("Limite alcanzado");
         }else{
         var valor1 = document.getElementById('valor1').value = ++value1; //se obtiene el valor del valor1, y se incrementa en 1 el valor que tenga.
-        TIENDA.totalVertical20x30 = value1   //el total (en número), que ingresó el usuario en pantalla
+        TIENDA.Cuadros[0].Cantidad = value1   //el total (en número), que ingresó el usuario en pantalla
         localStorage.setItem("tienda", JSON.stringify(TIENDA))
         }
     }
@@ -57,7 +69,7 @@ document.getElementById("next").onclick = function() {
         if(value1==0){
         }else{
         var valor1 = document.getElementById('valor1').value = --value1; //se obtiene el valor del input, y se decrementa en 1 el valor que tenga.
-        TIENDA.totalVertical20x30 = value1   //el total (en número), que ingresó el usuario en pantalla
+        TIENDA.Cuadros[0].Cantidad = value1   //el total (en número), que ingresó el usuario en pantalla
         localStorage.setItem("tienda", JSON.stringify(TIENDA))
         }
     }
@@ -67,7 +79,7 @@ document.getElementById("next").onclick = function() {
             alert("Limite alcanzado");
         }else{
         var valor2 = document.getElementById('valor2').value = ++value2; //se obtiene el valor del valor1, y se incrementa en 1 el valor que tenga.
-        TIENDA.totalVertical30x40 = value2   //el total (en número), que ingresó el usuario en pantalla
+        TIENDA.Cuadros[1].Cantidad = value2   //el total (en número), que ingresó el usuario en pantalla
         localStorage.setItem("tienda", JSON.stringify(TIENDA))
         }
     }
@@ -75,7 +87,7 @@ document.getElementById("next").onclick = function() {
         if(value2==0){
         }else{
         var valor2 = document.getElementById('valor2').value = --value2; //se obtiene el valor del input, y se decrementa en 1 el valor que tenga.
-        TIENDA.totalVertical30x40 = value2   //el total (en número), que ingresó el usuario en pantalla
+        TIENDA.Cuadros[1].Cantidad = value2   //el total (en número), que ingresó el usuario en pantalla
         localStorage.setItem("tienda", JSON.stringify(TIENDA))
         }
     }
@@ -85,7 +97,7 @@ document.getElementById("next").onclick = function() {
             alert("Limite alcanzado");
         }else{
         var valor3 = document.getElementById('valor3').value = ++value3; //se obtiene el valor del valor1, y se incrementa en 1 el valor que tenga.
-        TIENDA.totalVertical32x47 = value3   //el total (en número), que ingresó el usuario en pantalla
+        TIENDA.Cuadros[2].Cantidad = value3   //el total (en número), que ingresó el usuario en pantalla
         localStorage.setItem("tienda", JSON.stringify(TIENDA))
         }
     }
@@ -93,7 +105,7 @@ document.getElementById("next").onclick = function() {
         if(value3==0){
         }else{
         var valor3 = document.getElementById('valor3').value = --value3; //se obtiene el valor del input, y se decrementa en 1 el valor que tenga.
-        TIENDA.totalVertical32x47 = value3   //el total (en número), que ingresó el usuario en pantalla
+        TIENDA.Cuadros[2].Cantidad = value3   //el total (en número), que ingresó el usuario en pantalla
         localStorage.setItem("tienda", JSON.stringify(TIENDA))
         }
     } 
@@ -103,7 +115,7 @@ document.getElementById("next").onclick = function() {
             alert("Limite alcanzado");
         }else{
         var valor4 = document.getElementById('valor4').value = ++value4; //se obtiene el valor del valor4, y se incrementa en 1 el valor que tenga.
-        TIENDA.totalHorizontal20x30 = value4   //el total (en número), que ingresó el usuario en pantalla
+        TIENDA.Cuadros[3].Cantidad = value4   //el total (en número), que ingresó el usuario en pantalla
         localStorage.setItem("tienda", JSON.stringify(TIENDA))
         }
     }
@@ -111,7 +123,7 @@ document.getElementById("next").onclick = function() {
         if(value4==0){
         }else{
         var valor4 = document.getElementById('valor4').value = --value4; //se obtiene el valor del input, y se decrementa en 1 el valor que tenga.
-        TIENDA.totalHorizontal20x30 = value4   //el total (en número), que ingresó el usuario en pantalla
+        TIENDA.Cuadros[3].Cantidad = value4   //el total (en número), que ingresó el usuario en pantalla
         localStorage.setItem("tienda", JSON.stringify(TIENDA))
         }
     } 
@@ -121,7 +133,7 @@ document.getElementById("next").onclick = function() {
             alert("Limite alcanzado");
         }else{
         var valor5 = document.getElementById('valor5').value = ++value5; //se obtiene el valor del valor1, y se incrementa en 1 el valor que tenga.
-        TIENDA.totalHorizontal30x40 = value5   //el total (en número), que ingresó el usuario en pantalla
+        TIENDA.Cuadros[4].Cantidad = value5   //el total (en número), que ingresó el usuario en pantalla
         localStorage.setItem("tienda", JSON.stringify(TIENDA))
         }
     }
@@ -129,7 +141,7 @@ document.getElementById("next").onclick = function() {
         if(value5==0){
         }else{
         var valor5 = document.getElementById('valor5').value = --value5; //se obtiene el valor del input, y se decrementa en 1 el valor que tenga.
-        TIENDA.totalHorizontal30x40 = value5   //el total (en número), que ingresó el usuario en pantalla
+        TIENDA.Cuadros[4].Cantidad = value5   //el total (en número), que ingresó el usuario en pantalla
         localStorage.setItem("tienda", JSON.stringify(TIENDA))
         }
     }  
@@ -139,7 +151,7 @@ document.getElementById("next").onclick = function() {
             alert("Limite alcanzado");
         }else{
         var valor6 = document.getElementById('valor6').value = ++value6; //se obtiene el valor del valor1, y se incrementa en 1 el valor que tenga.
-        TIENDA.totalHorizontal32x47 = value6   //el total (en número), que ingresó el usuario en pantalla
+        TIENDA.Cuadros[5].Cantidad = value6   //el total (en número), que ingresó el usuario en pantalla
         localStorage.setItem("tienda", JSON.stringify(TIENDA))
         }
     }
@@ -147,7 +159,7 @@ document.getElementById("next").onclick = function() {
         if(value6==0){
         }else{
         var valor6 = document.getElementById('valor6').value = --value6; //se obtiene el valor del input, y se decrementa en 1 el valor que tenga.
-        TIENDA.totalHorizontal32x47 = value6   //el total (en número), que ingresó el usuario en pantalla
+        TIENDA.Cuadros[1].Cantidad = value6   //el total (en número), que ingresó el usuario en pantalla
         localStorage.setItem("tienda", JSON.stringify(TIENDA))
         }
     }
@@ -155,7 +167,8 @@ document.getElementById("next").onclick = function() {
 $(document).ready(function(){
 $('body .calculo').on('click', 'button', function calculoCantidadesSeleccionadas(){
     
-    let resultado = Number(TIENDA.cantidadCuadros) - (Number(TIENDA.totalHorizontal20x30) + Number(TIENDA.totalHorizontal30x40) + Number(TIENDA.totalHorizontal32x47) + Number(TIENDA.totalVertical20x30) + Number(TIENDA.totalVertical30x40) + Number(TIENDA.totalVertical32x47))
+
+    let resultado = CUADROS.cantidadCuadros - (Number(TIENDA.Cuadros[0].Cantidad) + Number(TIENDA.Cuadros[1].Cantidad) + Number(TIENDA.Cuadros[2].Cantidad) + Number(TIENDA.Cuadros[3].Cantidad) + Number(TIENDA.Cuadros[4].Cantidad) + Number(TIENDA.Cuadros[5].Cantidad))
             if (resultado == 0) {
                 
                 boton2.removeAttribute("disabled","");
@@ -165,3 +178,37 @@ $('body .calculo').on('click', 'button', function calculoCantidadesSeleccionadas
     })
 })
     
+const button = document.querySelector('#next2');
+const popup = document.querySelector('.popup-wrapper');
+const close = document.querySelector('.popup-close');
+ 
+button.addEventListener('click', () => {
+    popup.style.display = 'block';
+});
+ 
+close.addEventListener('click', () => {
+    popup.style.display = 'none';
+});
+ 
+popup.addEventListener('click', e => {
+    // console.log(e);
+    if(e.target.className === 'popup-wrapper') {
+        popup.style.display = 'none';
+    }
+});
+
+
+function cargarDatos(){
+    var DatosJson = JSON.parse(JSON.stringify(TIENDA));
+    console.log(DatosJson.Cuadros.length);
+      $("#Table").append('<tr><td class="text-center">Medida</td>'+
+      '<td class="text-center">Cantidad</td>' );
+      for (i = 0; i < DatosJson.Cuadros.length; i++){
+
+   $("#Table").append('<tr>' + 
+      '<td align="center" style="dislay: none;">' + DatosJson.Cuadros[i].Medida + '</td>'+
+      '<td align="center" style="dislay: none;">' + DatosJson.Cuadros[i].Cantidad + '</td>' +
+      '<td align="center" style="dislay: none;">' + 'aca van a ingresar los input' + '</td>');
+    }
+}
+

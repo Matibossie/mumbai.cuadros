@@ -226,21 +226,32 @@
 				</div>		
 				<div class="botonesPasoDos">
 					<button class="next boton" id="previous">Atrás</button>
-					<button class="next boton" id="next2" disabled>Continuar</button>
+					<button class="next boton" id="next2"  disabled onclick="cargarDatos()">Continuar</button>
 				</div>
 			</div>
 		</div>	
 	</div>
 
 <!--  Paso 3  -->	
-	<div class="PasoTres" id="PasoTres" style="display: none;">
+	<div class="PasoTres hide" id="PasoTres" >
 		<div class="segundoPaso" id="segundoPaso">
 			<div class="circulo"><h2 class="numero" id="numero">3</h2></div>
-				<h2 class="textoPaso" id="textoPaso">Ingresar los diseños elegidos!</h2>
-				<br>
-				<br>
-				<br>
+				<h2 class="textoPaso" id="textoPaso">Ingresar los diseños elegidos!</h2>		
+				<div class="popup-wrapper">
+					<div class="popup">
+						<div class="popup-close">x</div>
+						<div class="popup-content">
+							<h3>¿Ya sabés que modelo elegirás?</h3>
+							<a href="catalogo.html" target="_blank">¡Quiero verlos!</a>
+						</div>
+					</div>
+				</div>		
 			</div>
+
+				<div class="tablaResumen"	id="datosPersona">
+					<table class="table table-striped table-dark" id="Table"></table>
+				</div>
+			
 		</div>		
 	</div>
 
