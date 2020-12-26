@@ -1,15 +1,8 @@
 let inicio = 0;
 let boton = document.querySelector("#next");
 let boton2 = document.querySelector("#next2");
-// let TIENDA = {
-//     "cantidadCuadros": 0,	
-//     "totalVertical20x30": 0,
-// 	"totalVertical30x40": 0,
-// 	"totalVertical32x47": 0,
-// 	"totalHorizontal20x30": 0,
-// 	"totalHorizontal30x40": 0,
-// 	"totalHorizontal32x47": 0,
-// }
+let boton3 = document.querySelector("#checkout");
+
 var CUADROS = { "cantidadCuadros": 0}
 
 var TIENDA = {"Cuadros":[
@@ -21,7 +14,14 @@ var TIENDA = {"Cuadros":[
         {"Medida":"Horizontal32x47","Cantidad":0},
 ]};
 
-
+var Modelos = {"Medida":[
+    {"Medida":"Vertical30x40","Modelo":""},
+    {"Medida":"Vertical32x47","Modelo":""},
+    {"Medida":"Vertical20x30","Modelo":""},
+    {"Medida":"Horizontal20x30","Modelo":""},
+    {"Medida":"Horizontal30x40","Modelo":""},
+    {"Medida":"Horizontal32x47","Modelo":""},
+]};
 
 function incrementar(){ // se crean la funcion y se agrega al evento onclick en en la etiqueta button con id aumentar
     if(inicio==10){
@@ -41,8 +41,7 @@ function decrementar(){ // se crean la funcion y se agrega al evento onclick en 
     }
 };
 
-//guardar en el JSON la cantidad de cuadros que se eligieron al hacer click en continuar.    
-
+//guardar en el JSON la cantidad de cuadros que se eligieron al hacer click en continuar.   
 document.getElementById("next").onclick = function() {
         if(inicio==0){
             alert("Elija más que 0 cuadros");
@@ -159,7 +158,7 @@ document.getElementById("next").onclick = function() {
         if(value6==0){
         }else{
         var valor6 = document.getElementById('valor6').value = --value6; //se obtiene el valor del input, y se decrementa en 1 el valor que tenga.
-        TIENDA.Cuadros[1].Cantidad = value6   //el total (en número), que ingresó el usuario en pantalla
+        TIENDA.Cuadros[5].Cantidad = value6   //el total (en número), que ingresó el usuario en pantalla
         localStorage.setItem("tienda", JSON.stringify(TIENDA))
         }
     }
@@ -185,11 +184,9 @@ const close = document.querySelector('.popup-close');
 button.addEventListener('click', () => {
     popup.style.display = 'block';
 });
- 
 close.addEventListener('click', () => {
     popup.style.display = 'none';
 });
- 
 popup.addEventListener('click', e => {
     // console.log(e);
     if(e.target.className === 'popup-wrapper') {
@@ -197,18 +194,22 @@ popup.addEventListener('click', e => {
     }
 });
 
-
 function cargarDatos(){
     var DatosJson = JSON.parse(JSON.stringify(TIENDA));
-    console.log(DatosJson.Cuadros.length);
+    //console.log(DatosJson.Cuadros.length);
       $("#Table").append('<tr><td class="text-center">Medida</td>'+
-      '<td class="text-center">Cantidad</td>' );
+      '<td class="text-center">Cantidad</td>'+
+      '<td class="text-center">Ingrese modelos separados por comas</td>' );
       for (i = 0; i < DatosJson.Cuadros.length; i++){
 
    $("#Table").append('<tr>' + 
       '<td align="center" style="dislay: none;">' + DatosJson.Cuadros[i].Medida + '</td>'+
       '<td align="center" style="dislay: none;">' + DatosJson.Cuadros[i].Cantidad + '</td>' +
-      '<td align="center" style="dislay: none;">' + 'aca van a ingresar los input' + '</td>');
+      '<td align="center" style="dislay: none;">' + '<input type="text" value="" '+' </td>' );
     }
 }
 
+function checkout() {
+          
+        
+    }

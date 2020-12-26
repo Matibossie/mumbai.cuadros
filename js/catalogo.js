@@ -80,3 +80,22 @@ $(document).ready(function(){
 // Elegir por categoria 
 
 
+var porCategoria = [];
+
+function cargoContenidoCategorizado() {
+    $.ajax({
+       url: "../js/api.json",
+       dataType: "json",
+       success: function(response) {
+          cargaJSON = response
+          $.each(cargaJSON, function(i) {
+            for (var i = 0; i < cargaJSON.length; i++) {
+                if (cargaJSON[i].categoria === 'Frase') {
+                    porCategoria.push(cargaJSON[i].imagen);
+                }
+            }
+        })}
+    })
+}
+    
+console.log(porCategoria);

@@ -662,10 +662,10 @@ form.whatsapp-form {
   flex-direction: column;
   justify-content: center; }
 
-.primerPaso, .segundoPaso {
+.primerPaso, .segundoPaso, .tercerPaso, .cuartoPaso {
   display: flex;
   justify-content: center; }
-  .primerPaso h2.numero, .segundoPaso h2.numero {
+  .primerPaso h2.numero, .segundoPaso h2.numero, .tercerPaso h2.numero, .cuartoPaso h2.numero {
     font-weight: bold;
     font-family: "Open Sans Condensed", sans-serif;
     text-align: center;
@@ -833,6 +833,18 @@ input[type=number] {
   right: 15px;
   cursor: pointer;
   font-size: 1.5rem; }
+
+.tablaResumen {
+  margin: 2rem 0rem; }
+
+.cuartoPaso {
+  flex-direction: column; }
+
+.gif {
+  align-self: center; }
+
+.padding-boton {
+  padding: 0.4rem 1rem !important; }
 
 /** CATALOGO **/
 .catalogo {

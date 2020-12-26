@@ -35,3 +35,12 @@ $('#next2').click(function(){
         );
     });
 })
+
+
+///////////////////////////////////////////////////////////////
+$('#next3').click(function(){ 
+    $("div.PasoTres").slideUp(1200, function(){
+        $("div.Checkout").slideDown(1200, function(){}
+        );
+    });
+})

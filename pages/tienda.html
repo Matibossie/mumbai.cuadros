@@ -234,7 +234,7 @@
 
 <!--  Paso 3  -->	
 	<div class="PasoTres hide" id="PasoTres" >
-		<div class="segundoPaso" id="segundoPaso">
+		<div class="tercerPaso" id="tercerPaso">
 			<div class="circulo"><h2 class="numero" id="numero">3</h2></div>
 				<h2 class="textoPaso" id="textoPaso">Ingresar los diseños elegidos!</h2>		
 				<div class="popup-wrapper">
@@ -249,13 +249,32 @@
 			</div>
 
 				<div class="tablaResumen"	id="datosPersona">
-					<table class="table table-striped table-dark" id="Table"></table>
+					<table class="table table-striped table-dark-white" id="Table"></table>
 				</div>
-			
+				<div class="botonesPasoTres">
+					<button class="next boton" id="next3" onclick="checkout()">Continuar</button>
+				</div>
 		</div>		
 	</div>
 
-
+<!--  Paso Checkout  -->	
+<div class="Checkout hide" id="PasoCheckout" >
+	<div class="cuartoPaso" id="cuartoPaso">
+		<h2 class="text-center">¡¡Gracias por tu compra!!</h2>
+		<div class="gif">
+			<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+			<lottie-player src="https://assets7.lottiefiles.com/datafiles/QvFXU1UQnXcp6XJ/data.json" background="transparent" speed="1" style="width: 300px; height: 300px;" autoplay></lottie-player>
+		</div>	
+	</div>
+	<div class="caja-enviar boton boton-wpp padding-boton">	
+		<img src="../img/icon/whatsappw.png" alt="logo-whatsapp 	">		
+		<a href="https://api.whatsapp.com/send?phone=+5491165212783&text=Hola! Quiero coordinar la entrega">
+		Coordinemos la entrega!
+		</a>
+	</div>
+			
+	</div>		
+</div>
 </main>
 
 <footer class="contenedor-footer">
